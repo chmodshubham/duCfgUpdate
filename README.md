@@ -30,7 +30,7 @@ The Configuration Update Message is sourced from separate units in the OSC and O
 
 ![du-cfg-fail](./images/du-cfg-fail.png)
 
-## Progress
+## Current Status
 
 ### OSC DU-High
 
@@ -40,7 +40,7 @@ path: `o-du-l2/src/du_app/du_f1ap_msg_hdl.c`
 
 ![osc-du1](./images/osc-du1.png)
 
-It only handles `Served Cells to Delete Lists` in **DU Configuration Update Acknowledgement** message.
+Even, it only handles `Served Cells to Delete Lists` in **DU Configuration Update Acknowledgement** message.
 
 ![osc-du2](./images/osc-du2.png)
 
