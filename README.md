@@ -6,9 +6,9 @@
 
 ### DU Configuration Update
 
-![duConfigUpdate1](./images/s1.png)
+![duConfigUpdate1](./images/duCfgUpd1.png)
 
-![duConfigUpdate2](./images/s2.png)
+![duConfigUpdate2](./images/duCfgUpd2.png)
 
 ## Elements for F1AP DU Configuration Update  
 
