@@ -1,8 +1,10 @@
-# DU Configuration Update 
+# Configuration Update 
 
-[TS 38.473 Section 8.2.4](./TS-38.473.pdf)
+The Configuration Update Message is sourced from separate units in the OSC and OAI. Specifically, it originates from the DU in OSC and the CU in OAI. To achieve a unified environment, modifications are necessary either in OSC or OAI. Given potential Layer 1 challenges, we've opted to retain the OSC DU as is. Consequently, the DU Configuration Update handler will be integrated on the OAI CU side, ensuring the OSC DU remains consistent.
 
-## Standards Defination
+## Standard Defination
+
+3GPP Standard: [TS 38.473 Section 8.2.4](./TS-38.473.pdf)
 
 ### DU Configuration Update
 
@@ -34,11 +36,11 @@
 
 Currently, OAI DU-High only provides `Served Cells to Modify Lists IE` & `Served Cells to Delete Lists IE`.
 
-`o-du-l2/src/du_app/du_f1ap_msg_hdl.c`
+path: `o-du-l2/src/du_app/du_f1ap_msg_hdl.c`
 
 ![osc-du1](./images/osc-du1.png)
 
-Then handling of only `Served Cells to Delete Lists IE` in **DU Configuration Update Acknowledgement** message:
+It only handles `Served Cells to Delete Lists` in **DU Configuration Update Acknowledgement** message.
 
 ![osc-du2](./images/osc-du2.png)
 
@@ -50,11 +52,11 @@ Call Flow:
 
 Handling of **DU Configuration Update** by OSC-CU:
 
+path: `o-du-l2/src/cu_stub/cu_f1ap_msg_hdl.c`
+
 ![osc-cu1](./images/osc-cu1.png)
 
 Only handles the `Served Cells to Delete List` in processing **DU Configuration Update** in OSC-CU.
-
-`o-du-l2/src/cu_stub/cu_f1ap_msg_hdl.c`
 
 ![osc-cu2](./images/osc-cu2.png)
 
@@ -64,7 +66,7 @@ Only handles the `Served Cells to Delete List` in processing **DU Configuration 
 
 In OAI CU side, there are only macros for the **DU Configuration Update** message.
 
-`openairinterface/openair2/F1AP/f1ap_cu_interface_management.c`
+path: `openairinterface/openair2/F1AP/f1ap_cu_interface_management.c`
 
 ![oai-cu](./images/oai-cu.png)
 
