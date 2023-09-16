@@ -4,9 +4,29 @@
 
 ## Standards Defination
 
+### DU Configuration Update
+
 ![duConfigUpdate1](./images/s1.png)
 
-![duConfigUpdate1](./images/s2.png)
+![duConfigUpdate2](./images/s2.png)
+
+## Elements for F1AP DU Configuration Update  
+
+### DU Configuration Update
+
+![du-cfg1](./images/du-cfg1.png)
+
+![du-cfg2](./images/du-cfg2.png)
+
+### DU Configuration Update Acknowledgement
+
+![du-cfg-ack1](./images/du-cfg-ack1.png)
+
+![du-cfg-ack2](./images/du-cfg-ack2.png)
+
+### DU Configuration Update Failure
+
+![du-cfg-fail](./images/du-cfg-fail.png)
 
 ## Progress
 
@@ -44,7 +64,5 @@ Only handles the `Served Cells to Delete List` in processing DU Configuration Up
 
 In OAI CU side, there are only macros for the **DU Configuration Update** message.
 
-![oai-cu](oai-cu.png)
-
-
+![oai-cu](./images/oai-cu.png)
 
