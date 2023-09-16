@@ -2,7 +2,7 @@
 
 ## Standard Defination
 
-3GPP Standard: [TS 38.473 Section 8.2.4](./TS-38.473.pdf)
+3GPP Standard: [TS 38.473](./TS-38.473.pdf)
 
 ### DU Configuration Update
 
