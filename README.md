@@ -48,11 +48,11 @@ Call Flow:
 
 ![Call Flow](./images/F1APMsgHdlr.png)
 
-Handling of DU Configuration Update by OSC-CU:
+Handling of **DU Configuration Update** by OSC-CU:
 
 ![osc-cu1](./images/osc-cu1.png)
 
-Only handles the `Served Cells to Delete List` in processing DU Configuration Update in OSC-CU.
+Only handles the `Served Cells to Delete List` in processing **DU Configuration Update** in OSC-CU.
 
 `o-du-l2/src/cu_stub/cu_f1ap_msg_hdl.c`
 
@@ -63,6 +63,8 @@ Only handles the `Served Cells to Delete List` in processing DU Configuration Up
 ### OAI CU 
 
 In OAI CU side, there are only macros for the **DU Configuration Update** message.
+
+`openairinterface/openair2/F1AP/f1ap_cu_interface_management.c`
 
 ![oai-cu](./images/oai-cu.png)
 
