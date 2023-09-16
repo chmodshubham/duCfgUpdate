@@ -1,7 +1,5 @@
 # Configuration Update 
 
-The Configuration Update Message is sourced from separate units in the OSC and OAI. Specifically, it originates from the DU in OSC and the CU in OAI. To achieve a unified environment, modifications are necessary either in OSC or OAI. Given potential Layer 1 challenges, we've opted to retain the OSC DU as is. Consequently, the DU Configuration Update handler will be integrated on the OAI CU side, ensuring the OSC DU remains consistent.
-
 ## Standard Defination
 
 3GPP Standard: [TS 38.473 Section 8.2.4](./TS-38.473.pdf)
